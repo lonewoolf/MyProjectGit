@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  td
+    .applewrap
+      .col
+        a(href='https://www.xoom.com/india', target='_blank')
+          h2 XOOM:
+        p.note2  #{XoomText}
+      .col
+        a(href='https://www.remit2india.com/sendmoneytoindia/UnitedStates/index.jsp', target='_blank') 
+         h2 REMIT2INDIA:
+        p.note2 1 USD = #{remit2IndiaText}    
+      .col.last  
+        a(href='http://www.icicibank.com/nri-banking/nri_banking.html', target='_blank') 
+          h2 MONEY2INDIA:
+        p.note2 #{money2IndiaText}
+    p.note2(style='white-space:pre;')    
+    .applewrap
+      .col    
+        a(href='https://www.timesofmoney.com/remittance/axisremit/secure/axisremitLoginForm.jsp?', target='_blank')
+          h2 AXIS BANK 
+        p.note2(style='white-space:pre;')
+          | #{axisRemitText[0]}   #{axisRemitText[1]}
+          | #{axisRemitText[2]}     #{axisRemitText[3]}
+          | #{axisRemitText[4]}    #{axisRemitText[5]}
+          | #{axisRemitText[6]}    #{axisRemitText[7]}
+          | #{axisRemitText[8]}   #{axisRemitText[9]}
+      .col
+      .col    

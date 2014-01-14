@@ -1,0 +1,108 @@
+html(xmlns='http://www.w3.org/1999/xhtml')
+head
+    meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+    title LiveXchange
+    link(href='/stylesheets/style.css', rel='stylesheet', type='text/css')
+    script(type='text/javascript').
+      setTimeout("location.reload(true);",60000);
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-45144859-1', 'livexchange.herokuapp.com');
+      ga('send', 'pageview');
+  body
+    h1 LiveXchange
+    h2
+      a(href='http://liveXchange.herokuapp.com')
+        | Xchange Rates, as we
+        | speak
+    table(width='100%',align='center')
+      tr
+        td(width='20%')
+          #main(style='text-align: left;')
+            ul#navigationMenu
+              li
+                a.home(href='#')
+                  span Home
+              li
+                a.about(href='#')
+                  span About
+              li
+                a.services(href='#')
+                  span Services
+              li
+                a.portfolio(href='#')
+                  span Portfolio
+              li
+                a.contact(href='#')
+                  span
+                    | Contact
+                    | us
+        block content
+    p.note  
+    .wrapper.col6
+      #footer
+          #newsletter
+            h2 Stay In The Know !
+            p Please enter your email to join our mailing list
+            form(action='#', method='post')
+              fieldset
+                legend News Letter
+                input(type='text', value='Enter Email Here…', onfocus='this.value=(this.value==\'Enter Email Here…\')? \'\' : this.value ;')
+                input#news_go(type='submit', name='news_go', value='GO')
+            p
+              | To unsubscribe please
+              a(href='#') click here »
+          .footbox
+            h2 Lacus interdum
+            ul
+              li
+                a(href='#') Praesent et eros
+              li
+                a(href='#') Praesent et eros
+              li
+                a(href='#') Lorem ipsum dolor
+              li
+                a(href='#') Suspendisse in neque
+              li.last
+                a(href='#') Praesent et eros
+          .footbox
+            h2 Lacus interdum
+            ul
+              li
+                a(href='#') Praesent et eros
+              li
+                a(href='#') Praesent et eros
+              li
+                a(href='#') Lorem ipsum dolor
+              li
+                a(href='#') Suspendisse in neque
+              li.last
+                a(href='#') Praesent et eros
+          .footbox
+            h2 Lacus interdum
+            ul
+              li
+                a(href='#') Praesent et eros
+              li
+                a(href='#') Praesent et eros
+              li
+                a(href='#') Lorem ipsum dolor
+              li
+                a(href='#') Suspendisse in neque
+              li.last
+                a(href='#') Praesent et eros
+          br.clear
+
+    .wrapper.col7
+      #copyright
+        p.fl_left
+          | Copyright © 2011 - All Rights Reserved -
+          a(href='#') AChakravarty Design
+        p.fl_right
+          | 
+          a(href='http://livexchange.herokuapp.com', title='LiveXchange') LiveXchange(Beta)
+        br.clear
+    
+    
